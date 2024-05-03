@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+#main{
+    width: 100%;
+    height:100%;
+    display: flex;
+}
+#left {
+    width:80%;
+    height:100%;
+    background-color: brown;}
+#left #ltop {
+width:100%;
+height:70%;
+background-image: url("https://img.freepik.com/free-photo/close-up-decorative-roses_23-2150904950.jpg?t=st=1714631239~exp=1714634839~hmac=7be6aa050db39d78a45b670a288a1dc81abc6f3b2915093a2ba6cf0206b5b7ed&w=1060");
+background-size: cover;
+}
+#left #lbottom {
+    width:100%;
+    height:30%;
+    background-color: rgb(0, 0, 0);
+    color:white; 
+    padding:50px 150px;
+    }
+
+#lbottomcontent{
+    width:100%;
+    height:30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#contentleft{
+    width:45%;
+    height:100%;
+
+}
+#contentleft p{
+    width:80%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    gap: 2px;
+  opacity: .6;
+
+}
+#contentright{
+    width:48%;
+    height:30px;
+
+}
+#contentright h4{
+    font-size: 20px;
+   margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-right: 10px;
+
+}
+.relm{
+    display: flex;
+    margin-right: 1px;
+ 
+}
+.reletext{
+    margin-left: 10px;
+    
+}
+.reletext h6{
+    opacity: .5;
+    font-weight: 500;
+}
+/**right side part starts here this part divided into two sections top and bottom */
+#right {
+    width:20%;
+    height:100%;
+    background-color: rgb(0, 0, 0);
+}
+/*this is right top section */
+#right #rtop{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:70%;
+    background-color: rgb(154, 139, 139);
+    padding:50px;
+    position: relative;
+}
+#rtop a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 25px;
+}
+#rtop #standard{
+    position:relative;
+    margin-left: 30px;
+}
+#rtop  #standard::before{
+    content: "";
+    position:absolute;
+    top:11px;
+    transform: translate(0,-50%);
+    left:-25px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+}
+#icons {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    top:0;
+    right:0;
+    position: absolute;
+    padding:32px;
+}
+#icons i{
+    font-size: 20px;
+}
+#bottomflower{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100px;
+    height: 120px;
+    background-image:url("https://img.freepik.com/free-vector/abstract-leaf-element-green-watercolor-background-illustration-high-resolution-free-photo_1340-21740.jpg?t=st=1714648227~exp=1714651827~hmac=c30ae3d74b900c1f2c225545827345613e309e8e278e2bdb4ab976d0adafa513&w=360");
+    background-size: cover;
+    background-position: center;
+    
+}
+#bottomflower i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(245, 245, 245);
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 27px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    border-radius:40%;
+    -webkit-border-radius:40%;
+    -moz-border-radius:40%;
+    -ms-border-radius:40%;
+    -o-border-radius:40%;
+    opacity: 0.5;
+    color:white;
+    font-weight: 500;
+    width:4dvb;
+    height:40px;
+}
+/*this is right bottom  section */
+#right #rbottom{
+    width:100%;
+    height:30%;
+    background-image: url("https://img.freepik.com/free-photo/yellow-ginkgo-leaf-framed-background_53876-165206.jpg?t=st=1714648315~exp=1714651915~hmac=db501d45566f2a2a910cd1c52519b4c031a91cdd922c065e93e51ec938cade70&w=900");
+    background-size: cover;
+   position: relative;
+}
+#capsule{
+    position: absolute;
+    bottom:15%;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color:rgba(0, 0, 0, 0.47);
+    width: 90%;
+    padding:10px 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#capsule h6{
+    color:white;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+#capsule h4{
+    color:rgb(254, 255, 251);
+    font-weight: 600;
+    font-size: 14px;
+    font-family:'Courier New', Courier, monospace;}
+#capsule p{
+    color:rgb(249, 249, 249);
+    font-size: small;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
